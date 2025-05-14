@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JS Event Assignment</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🎉 Interactive JS Playground</h1>
+  </header>
+
+  <section>
+    <button id="colorButton">Click Me to Change Color</button>
+    <div id="hoverBox">Hover over me!</div>
+    <p id="keyInfo">Press any key...</p>
+    <button id="secretButton">Double Click Me 🤫</button>
+  </section>
+
+  <section id="gallery">
+    <h2>Image Gallery</h2>
+    <img id="galleryImage" src="https://via.placeholder.com/300x200?text=Image+1" alt="Gallery Image"/>
+    <div>
+      <button onclick="prevImage()">Previous</button>
+      <button onclick="nextImage()">Next</button>
+    </div>
+  </section>
+
+  <section>
+    <h2>Tabs</h2>
+    <div class="tabs">
+      <button onclick="showTab('tab1')">Tab 1</button>
+      <button onclick="showTab('tab2')">Tab 2</button>
+    </div>
+    <div id="tab1" class="tab-content">Welcome to Tab 1</div>
+    <div id="tab2" class="tab-content hidden">Hello from Tab 2</div>
+  </section>
+
+  <section>
+    <h2>Form Validation</h2>
+    <form id="userForm">
+      <label>Email: <input type="email" id="email" required></label><br>
+      <label>Password: <input type="password" id="password" required></label><br>
+      <button type="submit">Submit</button>
+      <p id="formMessage"></p>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
